@@ -3,8 +3,19 @@ Ian Webster
 May 2021
 MIDI Library Functions for midiuno
 */
-#include <stdint.h>
-#include "HardwareSerial.h"
+
+#include "Arduino.h"
+
+// Globals
+// Note/Key Pin Aliases
+#define NUM_KEYS 1
+// Note/Key Pin Aliases
+extern const uint8_t p0;
+extern const uint8_t pins[NUM_KEYS];
+extern uint8_t notes[NUM_KEYS];
+
+// uint16_t keysOn = 0x0000;
+// uint16_t keysOff = 0x0000;
 
 /**
  * Sends a note with given `pitch` and `velocity` on channel `cmd`. 
@@ -15,3 +26,9 @@ MIDI Library Functions for midiuno
  * @result void
  */
 void noteOn(uint8_t channel, uint8_t note, uint8_t velocity);
+
+/**
+ * Reads keys into internal memory. Used to check if a note changed state before sending another message. 
+ * 
+ */
+void readKeys();

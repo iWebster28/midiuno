@@ -10,7 +10,7 @@
 #include "midian.h"
 
 void setup() {
-  Serial.begin(31250); // MIDI Baud Rate
+  Serial.begin(DEBUGRATE); // MIDI Baud Rate
   // Setup pins
   for (uint8_t i = 0 ; i < NUM_KEYS; i++) {
     pinMode(pins[i], INPUT_PULLUP);
@@ -26,7 +26,8 @@ void loop() {
   // use bitRead and bitWrite?
   // avoid O(n) somehow?
 
-  readKeys();
+  // readKeys();
+  fastReadKeys();
 
 
   

@@ -24,5 +24,5 @@ A MIDI Footswitch Project for musicians.
 [Flip Tutorial](https://www.youtube.com/watch?v=fSXZMVdO5Sg)  
 
 #### Etc
-[Arduino Port Manipulation by Byte](https://www.arduino.cc/en/Reference/PortManipulation)
+[Arduino Port Manipulation by Byte](https://www.arduino.cc/en/Reference/PortManipulation)  
 [ATmega328p Mapping](https://www.arduino.cc/en/Hacking/PinMapping168)

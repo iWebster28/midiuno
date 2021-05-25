@@ -41,3 +41,8 @@ void noteOn(uint8_t channel, uint8_t note, uint8_t velocity);
  */
 void readKeys();
 void fastReadKeys();
+
+/**
+ * Writes a bit `value` into position `i` of `_byte`
+ */ 
+void betterBitWrite(uint8_t _byte, uint8_t i, uint8_t value);

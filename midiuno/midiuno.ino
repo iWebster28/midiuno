@@ -10,7 +10,7 @@
 #include "midian.h"
 
 void setup() {
-  Serial.begin(DEBUGRATE); // MIDI Baud Rate
+  Serial.begin(MIDIRATE); // MIDI Baud Rate
   // Setup pins
   for (uint8_t i = 0 ; i < NUM_KEYS; i++) {
     pinMode(pins[i], INPUT_PULLUP);
